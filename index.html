@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digital Clock</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="clock-wrapper">
+        <h1 class="title">Digital Clock</h1>
+
+        <div class="date-display">
+          <span id="day-name"></span>
+          <span id="date"></span>
+        </div>
+
+        <div class="time-display">
+          <div class="time-segment">
+            <span id="hours" class="time">00</span>
+            <span class="label">Hours</span>
+          </div>
+          <span class="separator">:</span>
+          <div class="time-segment">
+            <span id="minutes" class="time">00</span>
+            <span class="label">Minutes</span>
+          </div>
+          <span class="separator">:</span>
+          <div class="time-segment">
+            <span id="seconds" class="time">00</span>
+            <span class="label">Seconds</span>
+          </div>
+        </div>
+
+        <div class="period-display">
+          <span id="period">AM</span>
+        </div>
+
+        <div class="controls">
+          <button id="format-toggle" class="btn">Switch to 24-Hour</button>
+          <button id="theme-toggle" class="btn">🌙 Dark Mode</button>
+        </div>
+
+        <div class="timezone-info">
+          <span id="timezone"></span>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
